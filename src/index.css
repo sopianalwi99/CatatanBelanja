@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Comfortaa:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+body {
+  font-size: 1rem;
+  font-family: 'Comfortaa', sans-serif;
+  color: #283618;
+  background-color: #fefae0;
+}
+
+.app {
+  width: 100%;
+  height: 30%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+h1 {
+  font-family: 'Fantasy';
+  text-align: center;
+  background-color:black;
+  color: gold;
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: 'Fantasy';
+  color: gold;
+  font-size: 2rem;
+  text-align: center;
+  background-color:black;
+  padding: 0.5rem 0;
+}
+
+.add-form {
+  background-color: black;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+.add-form h3 {
+  margin-right: 2rem;
+}
+
+.add-form div select {
+  margin-right: 1rem;
+}
+
+button,
+select,
+input {
+  background-color: #fefae0;
+  font-family: inherit;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 6rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+select{
+  padding: 1rem 1rem;
+}
+
+button {
+  background-color: gold;
+  color: black;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+}
+
+.list {
+  background-image: url(src/assets/paper.png);
+  background-size: 100%;
+  /* background-attachment: local; */
+  color: #fefae0;
+  padding: 2.3rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.list ul {
+  list-style: none;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+.list li {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  /* gap: 2rem; */
+  margin-bottom: 3rem;
+}
+
+.list input[type='checkbox'] {
+  height: 3rem;
+  width: 3rem;
+  accent-color: #283618;
+  margin-right: 1.3rem;
+}
+
+.list li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 2.6rem;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  background-color: red;
+  margin-left: 1rem;
+}
+
+.actions {
+  background-color: black;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.actions button,
+.actions select {
+  padding: 0.8rem 2.4rem;
+  font-size: 1rem;
+  margin: 0 0.8rem;
+}
+
+.stats {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 40%;
+  }
+}
